@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Тестовое задание</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <main class="page-main">
+        <div class="forecast">
+            <header class="forecast__header">
+                <h1 class="forecast__header-title">Прогноз погоды</h1>
+                <p class="forecast__header-text">Самара,</p>
+                <p class="forecast__header-date" id="wb_data">Текущая дата</p>
+            </header>
+            <section class="forecast__slider">                
+                <div class="slider">
+                    <div class="slider__wrapper">
+                    <ul class="forecast__days slider__days"></ul>
+                    </div>
+                    <button type="button" class="slider__control slider__control--left"></button>
+                    <button type="button" class="slider__control slider__control--right slider__control--show"></button>
+                </div>
+            </section>
+        </div>
+        <template id="forecast__template">
+            <li class="forecast__day slider__item">
+                <a class="forecast__link" href="item1.html">
+                    <p class="forecast__name">День недели</p>
+                    <time class="time forecast__date" datetime="2019-07-23 00:00+0300">
+                        Дата</time>
+                    <img class="forecast__img">
+                    <div class="forecast__info">
+                        <div>
+                            <p class="forecast__temperature forecast__temperature--day">
+                                Температура днём
+                            </p>
+                            <p class="forecast__temperature forecast__temperature--night">
+                                Температура ночью
+                            </p>
+                            <p class="forecast__condition">
+                                Облачность
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </template>
+    <script src="newday.js"></script>    
+    <script src="weather.js"></script>        
+</body>
+
+
+</html>
